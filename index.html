@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>World Clocks | USA</title>
+    <script type="text/javascript" src="scripts/js/includes.js"></script>
+    <style>
+        body {font-family: Arial; font-size: 16pt; line-height: 24pt;}
+        .label {float:left; font-weight: bold; padding: 0px 0px 0px 20px;}
+        .time {margin: 0px 0px 0px 250px;}
+        .description {font-family: Verdana; font-weight:normal; font-size: 9pt;float:left; padding:0px 0px 0px 10px;}
+        #content {margin: 40px 40px 0px 40px;}
+        #gmtRow {padding: 10px 0px 10px 0px; border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;}
+        #activeTime {background-color: #FD6;}
+    </style>
+</head>
+<body onload="runClocks()">
+    <div id="content">
+    <script>if(jerusalemClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">Jerusalem</div>
+    <div id="jerusalem" class="time"></div><script>if(jerusalemClock==clock){document.write("</div>");}</script>
+    <script>if(germanyClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">Germany</div><div id="germany" class="time"></div><script>if(germanyClock==clock){document.write("</div>");}</script>
+    <script>if(denmarkClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">Denmark</div><div id="denmark" class="time"></div><script>if(denmarkClock==clock){document.write("</div>");}</script>
+    <script>if(londonClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">London</div><div id="england" class="time"></div><script>if(londonClock==clock){document.write("</div>");}</script>
+    <div id="gmtRow">
+        <script>if(gmtClock==clock){document.write("<div id='activeTime'>");}</script>
+        <div class="label">GMT</div><div id="gmt" class="time"></div><script>if(gmtClock==clock){document.write("</div>");}</script>
+    </div>
+    <script>if(etClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">ET</div><div class="description">(e.g. New York, Georgia)</div><div id="et" class="time"></div><script>if(etClock==clock){document.write("</div>");}</script>
+    <script>if(ctClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">CT</div><div class="description">(e.g. Chicago, Dallas)</div><div id="ct" class="time"></div><script>if(ctClock==clock){document.write("</div>");}</script>
+    <script>if(mtClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">MT</div><div class="description">(e.g. Colorado, Utah)</div><div id="mt" class="time"></div><script>if(mtClock==clock){document.write("</div>");}</script>
+    <script>if(azClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">Arizona</div><div id="az" class="time"></div><script>if(azClock==clock){document.write("</div>");}</script>
+    <script>if(ptClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">PT</div><div class="description">(e.g. California, Washington)</div><div id="pt" class="time"></div><script>if(ptClock==clock){document.write("</div>");}</script>
+    <script>if(akClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">Alaska</div><div id="ak" class="time"></div><script>if(akClock==clock){document.write("</div>");}</script>
+    <script>if(hiClock==clock){document.write("<div id='activeTime'>");}</script>
+    <div class="label">Hawaii</div><div id="hi" class="time"></div><script>if(hiClock==clock){document.write("</div>");}</script>
+    </div>
+</body>
+</html>
